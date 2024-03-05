@@ -8,7 +8,7 @@ import ButtonWarp from "./ButtonWarp";
 export default function CardBanner({title, className = ''}) {
   return (
     <div className={clsx(className,`px-2 py-20 relative`)}>
-      <div className="w-full h-[500px] px-5 relative overflow-hidden flex-col rounded-3xl flex justify-center items-center bg-neutral-300/50 dark:bg-neutral-800/50 py-40">
+      <div className="w-full h-auto lg:h-[500px] px-5 relative overflow-hidden flex-col rounded-3xl flex justify-center items-center bg-neutral-300/50 dark:bg-neutral-800/50 py-20 lg:py-40">
         <Image
           src="/Aset/Gradient.png"
           alt="image"
@@ -17,9 +17,9 @@ export default function CardBanner({title, className = ''}) {
           priority
           className="w-full h-full object-cover z-[-9] absolute inset-0"
         />
-        <div className="grid grid-cols-2 w-full">
+        <div className="grid lg:grid-cols-2 w-full">
         <div className="flex flex-col">
-        <h1 className="text-3xl md:text-7xl py-5 text-start bg-clip-text bg-gradient-to-r dark:from-white from-black from-50% dark:to-[#b1b1b1] to-[#292929]   md:w-[80%] text-transparent font-bold">
+        <h1 className="text-4xl md:text-7xl py-5 text-start bg-clip-text bg-gradient-to-r dark:from-white from-black from-50% dark:to-[#b1b1b1] to-[#292929]   md:w-[80%] text-transparent font-bold">
           {title}
         </h1>
         <Link href='https://docs.flexgpu.app/welcome-to-flexgpu/introducing' target="__blank" className="w-auto">
