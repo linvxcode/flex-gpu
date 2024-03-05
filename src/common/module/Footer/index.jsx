@@ -12,17 +12,22 @@ const Footer = () => {
   return (
     <div className="w-full flex flex-col justify-center items-center">
       <div className="grid grid-cols-1 md:grid-cols-3 py-10 px-8 h-auto w-full max-w-[1500px] place-content-center md:px-5 place-items-start md:place-items-center">
-        <div className="flex flex-col justify-start lg:justify-center items-start lg:items-center">
-          <div className="w-full flex justify-start lg:justify-center lg:items-center lg:mx-auto">
-            <div className="w-[150px] lg:mx-auto h-auto overflow-hidden ">
+        <div className="w-full flex flex-col justify-center items-center">
+          <div className="w-full gap-1 flex flex-col justify-center items-center lg:mx-auto">
+            <div className="w-auto lg:w-[150px] lg:mx-auto h-auto overflow-hidden ">
               <Image
-                className="w-[50%] lg:mx-auto relative h-auto object-cover  rounded-3xl"
+                className="w-auto lg:w-[50%] lg:mx-auto relative h-auto object-cover  rounded-3xl"
                 src="/Aset/Logo.webp"
                 alt="Image"
                 width={400}
                 height={400}
                 priority
               />
+            </div>
+            <div className="w-full flex justify-center items-center">
+              <h1 className="w-[80%] text-center text-base font-medium">
+              Revolutionizing Blockchain with GPU Computing
+              </h1>
             </div>
           </div>
           <div className="gap-5 flex py-5 justify-center items-center w-full">
