@@ -9,10 +9,9 @@ import { usePathname } from "next/navigation";
 import dynamic from "next/dynamic";
 import { ButtonSpot } from "../element/ButtonSpot";
 import DarkmodeSwitch from "../element/DarkmodeSwitch";
+import Logo from "./Logo";
 
-// const Logos = dynamic(() => import('./Logo'), {
-//   ssr: false
-// })
+
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -35,23 +34,23 @@ const Navbar = () => {
   return (
     <motion.div
       className={clsx(
-        scroll ? "backdrop-blur-sm" : "",
-        `w-full transition-all duration-300 mx-auto bg-[#ffffffd0] dark:bg-[#000000d0]  max-w-[1500px]  border-b-[1px] border-neutral-300 dark:border-neutral-800 py-5 px-5 2xl:rounded-3xl  lg:px-10 fixed top-0 z-[99]`
+        scroll ? "backdrop-blur-sm bg-[#ffffffd0] dark:bg-[#0f0e0ef5] border-b-[1px] border-neutral-300 dark:border-neutral-800" : " border-transparent bg-transparent",
+        `w-full transition-all duration-300 mx-auto  max-w-[1500px]   py-5 px-5 2xl:rounded-3xl  lg:px-10 fixed top-0 z-[99]`
       )}
     >
       <div className="flex flex-row justify-between items-center">
-        <div className="flex  z-[999] items-start justify-start">
+        <div className="flex  z-[999] items-start justify-start w-full">
           <Link
             href="/"
             className="group relative w-auto flex justify-start items-start"
           >
-            {/* <Logos /> */}
+            <Logo />
             <h1
               className={`${
                 open ? "text-white" : ""
-              }  text-3xl tracking-[-0.10em] font-bold`}
+              }  text-3xl tracking-[-0.10em] font-bold relative left-[-30px]`}
             >
-              Teaser
+              FlexGPU
             </h1>
           </Link>
         </div>
@@ -76,18 +75,18 @@ const Navbar = () => {
           ))}
         </div>
 
-        <div className="lg:hidden flex  items-center">
+        <div className="lg:hidden flex  items-center lg:w-full">
           <div className="px-2">
             <DarkmodeSwitch />
           </div>
           <NavMobile open={open} handleOpen={handleOpen} close={close} />
         </div>
 
-        <div className="lg:flex hidden w-[35%] items-center justify-end">
+        <div className="lg:flex hidden w-full items-center justify-end">
           <div className="px-2">
             <DarkmodeSwitch />
           </div>
-          <ButtonSpot title="Get This Template" />
+          {/* <ButtonSpot title="Get This Template" /> */}
         </div>
       </div>
     </motion.div>

@@ -1,78 +1,43 @@
-import { CiShop } from "react-icons/ci";
-import { FaConnectdevelop, FaPager, FaPiedPiper } from "react-icons/fa";
-import { ImProfile } from "react-icons/im";
-import { IoIosSchool } from "react-icons/io";
-import { IoDiamondOutline } from "react-icons/io5";
-import { MdAnimation } from "react-icons/md";
-import { MdOutlineAutoAwesomeMotion } from "react-icons/md";
 
-const size = 35
+import { TbCloudComputing } from "react-icons/tb";
+import { BsGpuCard } from "react-icons/bs";
+import { MdOutlinePrivateConnectivity } from "react-icons/md";
+import { AiOutlineCloudServer } from "react-icons/ai";
+import { GiMining } from "react-icons/gi";
 
-export const Services = [
-  {
-    icon: (
-      <FaConnectdevelop
-        size={size}
-        className="group-hover:rotate-90 transition-all duration-300"
-        
-      />
-    ),
-    title: "Is there a free trial available?",
-    desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat, repellat. Praesentium consectetur repellendus harum provident ad. Ducimus, ad consectetur? Distinctio inventore ad velit nihil debitis sapiente ipsum doloremque quaerat consectetur.",
-  },
-  {
-    icon: (
-      <MdAnimation
-        size={size}
-        className="group-hover:rotate-90 transition-all duration-300"
-      />
-    ),
-    title: "Can I change my plan later?",
-    desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat, repellat. Praesentium consectetur repellendus harum provident ad. Ducimus, ad consectetur? Distinctio inventore ad velit nihil debitis sapiente ipsum doloremque quaerat consectetur.",
-  },
-  {
-    icon: (
-      <MdOutlineAutoAwesomeMotion
-        size={size}
-        className="group-hover:rotate-90 transition-all duration-300"
-      />
-    ),
-    title: "What is your cancellation policy?",
-    desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat, repellat. Praesentium consectetur repellendus harum provident ad. Ducimus, ad consectetur? Distinctio inventore ad velit nihil debitis sapiente ipsum doloremque quaerat consectetur.",
-  },
-];
 
 export const ServiceItem = [
   {
-    title: 'Intuitive Dashboard Design',
-    desc: 'Experience an intuitive dashboard design that simplifies navigation and provides at-a-glance insights',
-    icon : <FaPager className="h-12 w-12 mb-4 dark:text-white text-black " />
+    title: 'Rent GPU',
+    desc: "Rent GPU service opens the doors to unparalleled computing power. Whether you're engaging in high-performance computing, complex simulations, or data-intensive applications, FlexGPU provides on-demand access to state-of-the-art Graphics Processing Units, ensuring that your projects are executed with speed and efficiency.",
+    link: 'https://docs.flexgpu.app/product/rent-gpu',
+    icon : <BsGpuCard className="h-10 w-10  dark:text-black text-white group-hover:text-white " />
   },
   {
-    title: 'Seamless Integration Across Tools',
-    desc: 'Teaser ensures seamless integration across a variety of essential tools, promoting a cohesive workflow that effortlessly connects your SaaS and startup solutions.',
-    icon : <ImProfile className="h-12 w-12 mb-4 dark:text-white text-black " />
+    title: 'Private Node',
+    desc: "FlexGPU introduces the Private Node Service, a revolutionary hosting solution that takes your computing experience to the next level. Explore the key features and advantages of FlexGPU's Private Node Service",
+    link: 'https://docs.flexgpu.app/product/private-node',
+    icon : <MdOutlinePrivateConnectivity className="h-10 w-10  dark:text-black text-white group-hover:text-white " />
   },
   {
-    title: 'Adaptive Scalability for Growing Ventures',
-    desc: ' Teaser offers adaptive scalability, catering to the evolving needs of startups',
-    icon : <IoDiamondOutline className="h-12 w-12 mb-4 dark:text-white text-black " />
+    title: 'Anonymous Hosting',
+    desc: "FlexGPU redefines the hosting experience with a revolutionary feature—Anonymous Hosting. This distinctive offering places privacy at the forefront, enabling users to deploy applications and services in a secure environment without compromising their identity. Explore the key features of FlexGPU's Anonymous Hosting",
+    link: 'https://docs.flexgpu.app/product/anonymous-hosting',
+    icon : <AiOutlineCloudServer className="h-10 w-10  dark:text-black text-white group-hover:text-white " />
   },
   {
-    title: 'Collaboration Hubs for Team Synergy',
-    desc: 'Foster team synergy with collaboration hubs in Teaser. Enhance communication',
-    icon : <CiShop className="h-12 w-12 mb-4 dark:text-white text-black " />
+    title: 'Cloud Dekstop',
+    desc: "As of my last knowledge update in January 2022, I don't have specific information about a service named 'Cloud Desktop' from FlexGPU. However, I can provide a general understanding of what a 'Cloud Desktop' service typically involves, and you may want to verify this information directly from FlexGPU's official documentation or support channels for the most accurate details.",
+    link: 'https://docs.flexgpu.app/product/cloud-dekstop',
+    icon : <TbCloudComputing className="h-10 w-10  dark:text-black text-white group-hover:text-white " />
   },
   {
-    title: 'Customizable Workflows for Your Unique Needs',
-    desc: 'Tailor Teaser to match your specific workflows',
-    icon : <IoIosSchool className="h-12 w-12 mb-4 dark:text-white text-black " />
+    title: 'GPU Mining',
+    desc: "FlexGPU introduces a sustainable and efficient approach to cryptocurrency mining with the 'GPU Mining with Personal Computer Idle Power Software.' This innovative solution enables users to harness the idle power of their personal computers, contributing to mining operations while ensuring energy efficiency. FlexGPU envisions a future where cryptocurrency mining aligns with environmental sustainability.",
+    link: 'https://docs.flexgpu.app/product/gpu-mining',
+    icon : <GiMining  className="h-10 w-10  dark:text-black text-white group-hover:text-white " />
   },
-  {
-    title: 'User-Friendly Onboarding and Training',
-    desc: 'Teaser ensures a smooth onboarding process with user-friendly interfaces and comprehensive training resources.',
-    icon : <FaPiedPiper className="h-12 w-12 mb-4 dark:text-white text-black " />
-  },
+ 
 
 ];
 

@@ -8,7 +8,7 @@ import { Providers } from '@/common/component/element/Providers'
 const plus_Jakarta_Sans = Plus_Jakarta_Sans({subsets: ['latin']});
 
 export const metadata = {
-  title: 'Teaser',
+  title: 'Flex GPU',
   description: 'SaaS and Startup Landing Page',
   
 }
@@ -16,7 +16,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${plus_Jakarta_Sans.className} dark:bg-black`}>
+      <body className={`${plus_Jakarta_Sans.className} dark:bg-[#0F0E0E]`}>
         <Providers>
         <div className='flex justify-center items-center'>
           <Navbar />

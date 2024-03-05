@@ -5,7 +5,7 @@ import React from "react";
 import { FaCode } from "react-icons/fa6";
 import { WiDayCloudy } from "react-icons/wi";
 import Feedback from "../../Feedback";
-import CardOffer from "@/common/component/element/CardOffer";
+import CardOffer from "@/common/component/element/CardBanner";
 
 export default function ServicePage() {
   return (

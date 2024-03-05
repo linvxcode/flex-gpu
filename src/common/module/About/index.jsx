@@ -3,7 +3,7 @@ import React from "react";
 import CardAbout from "./component/CardAbout";
 import ComponentTransition from "@/common/component/element/ComponentTransition";
 import Feedback from "../Feedback";
-import CardOffer from "@/common/component/element/CardOffer";
+import CardOffer from "@/common/component/element/CardBanner";
 
 const About = () => {
   return (

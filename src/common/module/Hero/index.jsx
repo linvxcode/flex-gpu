@@ -10,6 +10,8 @@ import { HeroImage } from "@/common/constant/HeroImage";
 import { Parallax } from "@/common/constant/Parallax";
 import H1 from "@/common/component/element/H1";
 import { ButtonSpot } from "@/common/component/element/ButtonSpot";
+import ButtonWarp from "@/common/component/element/ButtonWarp";
+import Link from "next/link";
 
 export const translateVariantText = {
   initial: {
@@ -51,36 +53,36 @@ const Hero = () => {
   const { c, r, ry, rz, scale, t, y } = Parallax(scrollY);
 
   return (
-    <div className="h-auto md:mb-20 max-w-[1500px] px-5 lg:px-10 mt-20 relative overflow-hidden">
-      <div className="flex flex-col justify-center md:top-0 mt-28 lg:mt-36  items-center">
+    <div className="h-auto md:mb-20 max-w-[1500px] px-5 lg:px-10  relative ">
+      <div className="flex flex-col justify-center md:top-0 mt-28 lg:mt-52  items-center">
         <div className="flex flex-col items-center justify-center">
-          <div className="border-[1px] rounded-full border-[#5515df] py-2 px-5">
-            <h1>Make Your Startup 🚀 </h1>
+          <div className="border-[1px] rounded-full border-[#5515df] py-2 px-5 mb-2">
+            <h1>New Era in GPU-centric computing</h1>
           </div>
           <H1
-            className=" xl:w-[80%] 2xl:w-[80%] !leading-[0.85em] items-center flex overflow-hidden dark:bg-gradient-to-r from-white from-50% to-[#9c9c9c] bg-text bg-clip-text text-transparent text-center text-4xl sm:text-5xl md:text-7xl w-full  font-bold pb-1"
-            title="Welcome to Teaser Streamlining Your SaaS and Startup Solution"
+            className=" xl:w-[80%] 2xl:w-[80%] !leading-[0.95em] items-center flex overflow-hidden dark:bg-gradient-to-r from-white from-50% to-[#9c9c9c] bg-text bg-clip-text text-transparent text-center text-4xl sm:text-5xl md:text-7xl w-full  font-bold pb-1"
+            title="Revolutionizing Blockchain with GPU Computing"
           />
 
-          <p className="lg:w-[70%] text-center  lg:text-2xl mt-2 dark:text-neutral-300 text-neutral-700">
-            Elevate your workflow with Teaser, the solution designed for
-            seamless operations. Connect, collaborate, and conquer with ease.
+          <p className="lg:w-[70%] text-center  lg:text-xl mt-2 dark:text-neutral-300 text-neutral-700">
+            FlexGPU recognizes the pivotal role that Graphics Processing Units
+            (GPUs) play in enhancing computational efficiency. Leveraging the
+            unparalleled processing power of GPUs
           </p>
 
           <motion.div className="flex max-md:flex-col w-full items-center justify-center gap-5 py-5">
-            <ButtonSpot
-              title="Get Started"
-              className="!rounded-md !w-auto !py-2"
-            />
+            <Link href='https://docs.flexgpu.app/welcome-to-flexgpu/introducing' target="__blank">
+            <ButtonWarp label='Get Started'  />
+            </Link>
           </motion.div>
         </div>
 
         <div className=" absolute w-[90%] top-[20%] h-[300px] z-[-99] ">
           <Rails />
-          <div className="bg-gradient-to-b from-white dark:from-black from-20% to-transparent absolute inset-0 "></div>
-          <div className="bg-gradient-to-l from-white dark:from-black from-1% to-transparent to-30% absolute inset-0"></div>
-          <div className="bg-gradient-to-r from-white dark:from-black from-1% to-transparent to-30% absolute inset-0"></div>
-          <div className="bg-gradient-to-t from-white dark:from-black from-1% to-transparent to-30% absolute inset-0"></div>
+          <div className="bg-gradient-to-b from-[#fff] dark:from-[#0F0E0E] from-20% to-transparent absolute inset-0 "></div>
+          <div className="bg-gradient-to-l from-[#fff] dark:from-[#0F0E0E] from-1% to-transparent to-30% absolute inset-0"></div>
+          <div className="bg-gradient-to-r from-[#fff] dark:from-[#0F0E0E] from-1% to-transparent to-30% absolute inset-0"></div>
+          <div className="bg-gradient-to-t from-[#fff] dark:from-[#0F0E0E] from-1% to-transparent to-30% absolute inset-0"></div>
         </div>
 
         <motion.div
@@ -114,6 +116,8 @@ const Hero = () => {
         </motion.div>
 
         {/* <ImgScale /> */}
+      <div className="absolute top-[130px] z-[-9] glowbg w-[100px] md:w-[300px] h-[200px]  left-0 "></div>
+
       </div>
     </div>
   );

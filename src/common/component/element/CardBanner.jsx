@@ -4,7 +4,7 @@ import clsx from "clsx";
 import Link from "next/link";
 import React from "react";
 
-export default function CardOffer({title, className = ''}) {
+export default function CardBanner({title, className = ''}) {
   return (
     <div className={clsx(className,`px-2 py-20 relative`)}>
       <div className="w-full px-5 relative overflow-hidden flex-col rounded-3xl flex justify-center items-center bg-neutral-300/50 dark:bg-neutral-800/50 py-40">
@@ -28,7 +28,7 @@ export default function CardOffer({title, className = ''}) {
           </Link>
         </div>
       </div>
-      <div className="absolute  z-[-9] glowbg w-[100%] md:w-[600px] h-[400px] top-[50px]"></div>
+      <div className="absolute  z-[-9] glowbg w-[200px] md:w-[300px] h-[300px] top-[50px]"></div>
     </div>
   );
 }

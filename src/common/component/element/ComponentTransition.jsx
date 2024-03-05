@@ -3,9 +3,10 @@ import React from "react";
 import { translateInViewVariant } from "./Transition";
 import { motion } from "framer-motion";
 
-const ComponentTransition = ({ children,className, delay }) => {
+const ComponentTransition = ({ children,className, delay, ...other }) => {
   return (
     <motion.div
+      {...other}
       initial="initial"
       whileInView="whileInview"
       variants={translateInViewVariant}

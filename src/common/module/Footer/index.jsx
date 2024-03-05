@@ -1,15 +1,45 @@
 import React from "react";
 import { FooterItem } from "@/common/constant/FooterItem";
 import { FaMedium } from "react-icons/fa6";
-import { FaTwitter, FaLinkedin, FaDiscord } from "react-icons/fa";
+import { FaTwitter, FaLinkedin, FaDiscord,FaTelegram,FaGithub   } from "react-icons/fa";
 import Link from "next/link";
 import ComponentTransition from "@/common/component/element/ComponentTransition";
-import TextAnimated from "../Faq/component/TextAnimated";
+import TextAnimated from "@/common/component/element/TextAnimated";
+import Logo from "@/common/component/navbar/Logo";
+import Image from "@/common/component/element/Image";
 
 const Footer = () => {
   return (
     <div className="w-full flex flex-col justify-center items-center">
-      <div className="grid grid-cols-1 md:grid-cols-4 py-10 px-8 h-auto w-full max-w-[1500px] place-content-center md:px-5 place-items-start md:place-items-center">
+      <div className="grid grid-cols-1 md:grid-cols-3 py-10 px-8 h-auto w-full max-w-[1500px] place-content-center md:px-5 place-items-start md:place-items-center">
+        <div className="flex flex-col justify-start lg:justify-center items-start lg:items-center">
+          <div className="w-full flex justify-start lg:justify-center lg:items-center lg:mx-auto">
+            <div className="w-[150px] lg:mx-auto h-auto overflow-hidden ">
+              <Image
+                className="w-[50%] lg:mx-auto relative h-auto object-cover  rounded-3xl"
+                src="/Aset/Logo.webp"
+                alt="Image"
+                width={400}
+                height={400}
+                priority
+              />
+            </div>
+          </div>
+          <div className="gap-5 flex py-5 justify-center items-center w-full">
+            <Link href='https://t.me/FlexGPU' target="__blank">
+            <FaTelegram  size={30} />
+            </Link>
+            <Link href='https://twitter.com/FlexGpu' target="__blank">
+            <FaTwitter size={30} />
+            </Link>
+            <Link href='https://medium.com/@flexgpu' target="__blank">
+            <FaMedium size={30} />
+            </Link>
+            <Link href="https://github.com/FlexGPU" target="__blank">
+            <FaGithub  size={30} />
+            </Link>
+          </div>
+        </div>
         {FooterItem?.map((item, index) => (
           <ComponentTransition
             delay={index * 0.1}
@@ -52,21 +82,7 @@ const Footer = () => {
           </ComponentTransition>
         ))}
       </div>
-      <div className="flex justify-center py-20 items-center flex-col ">
-        <div className="gap-5 flex py-5 justify-center items-center w-full">
-          <FaMedium size={30} />
-          <FaTwitter size={30} />
-          <FaLinkedin size={30} />
-          <FaDiscord size={30} />
-        </div>
-        <div className="flex flex-col">
-          <h1 className="text-sm">© 2024 Fahlevi. All Rights Reserved.</h1>
-          <h1 className="text-sm">
-            Designed by <span className="font-bold">Fahlevi</span> using{" "}
-            <span className="font-bold">Next Js</span> only.
-          </h1>
-        </div>
-      </div>
+
     </div>
   );
 };

@@ -4,7 +4,7 @@ import Rails from "@/common/component/element/Rails";
 import React from "react";
 import Feedback from "../../Feedback";
 import { SolutionAllItem } from "@/common/constant/CardItem";
-import CardOffer from "@/common/component/element/CardOffer";
+import CardOffer from "@/common/component/element/CardBanner";
 
 export default function SolutionPage() {
   return (
