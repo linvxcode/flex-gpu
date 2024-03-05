@@ -7,7 +7,7 @@ import ButtonWarp from "./ButtonWarp";
 
 export default function CardBanner({title, className = ''}) {
   return (
-    <div className={clsx(className,`px-2 py-20 relative`)}>
+    <div className={clsx(className,`  relative`)}>
       <div className="w-full h-auto lg:h-[500px] px-5 relative overflow-hidden flex-col rounded-3xl flex justify-center items-center bg-neutral-300/50 dark:bg-neutral-800/50 py-20 lg:py-40">
         <Image
           src="/Aset/Gradient.png"

@@ -17,8 +17,8 @@ export default function Card({ Content }) {
   };
 
   return (
-    <div className="w-full overflow-hidden  flex justify-start items-start">
-      <div className="flex gap-5 max-md:flex-col md:overflow-x-scroll md:overflow-y-hidden no-scrollbar py-10">
+    <div className="w-full overflow-hidden py-2 flex justify-start items-start">
+      <div className="flex gap-5 max-md:flex-col md:overflow-x-scroll md:overflow-y-hidden no-scrollbar">
         {Content.map((item, index) => (
           <ComponentTransition
             delay={index * 0.1}

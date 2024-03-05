@@ -8,8 +8,9 @@ import { Providers } from '@/common/component/element/Providers'
 const plus_Jakarta_Sans = Plus_Jakarta_Sans({subsets: ['latin']});
 
 export const metadata = {
-  title: 'Flex GPU',
-  description: 'SaaS and Startup Landing Page',
+  title: 'FlexGPU',
+  description: 'Revolutionizing Blockchain with GPU Computing',
+  icons: "/Aset/Logo.webp",
   
 }
 

@@ -50,21 +50,21 @@ export const tranlateVariant = {
 
 const Hero = () => {
   const { scrollY } = useScroll();
-  const { c, r, ry, rz, scale, t, y } = Parallax(scrollY);
+  const { RotateX,RotateY,RotateZ,TranslateX } = Parallax(scrollY);
 
   return (
-    <div className="h-auto md:mb-20 max-w-[1500px] px-5 lg:px-10  relative ">
-      <div className="flex flex-col justify-center md:top-0 mt-36 lg:mt-52  items-center">
+    <div className="h-auto mb-10 md:mb-20  max-w-[1500px] px-5 lg:px-10  relative ">
+      <div className="flex flex-col justify-center mt-52  items-center">
         <div className="flex flex-col items-center justify-center">
           <div className="border-[1px] rounded-full border-[#5515df] py-2 px-5 mb-2">
             <h1>New Era in GPU-centric computing</h1>
           </div>
           <H1
-            className=" xl:w-[80%] 2xl:w-[80%] !leading-[0.95em] items-center flex overflow-hidden dark:bg-gradient-to-r from-white from-50% to-[#9c9c9c] bg-text bg-clip-text text-transparent text-center text-4xl sm:text-5xl md:text-7xl w-full  font-bold pb-1"
+            className=" xl:w-[80%] 2xl:w-[80%] !leading-[1.2em] lg:!leading-[0.95em] items-center flex overflow-hidden dark:bg-gradient-to-r from-white from-50% to-[#9c9c9c] bg-text bg-clip-text text-transparent text-center text-4xl sm:text-5xl md:text-7xl w-full  font-bold pb-1"
             title="Revolutionizing Blockchain with GPU Computing"
           />
 
-          <p className="lg:w-[70%] text-center  lg:text-xl mt-2 dark:text-neutral-300 text-neutral-700">
+          <p className="w-[80%] lg:w-[70%] text-center text-xs lg:text-xl mt-2 dark:text-neutral-300 text-neutral-700">
             FlexGPU recognizes the pivotal role that Graphics Processing Units
             (GPUs) play in enhancing computational efficiency. Leveraging the
             unparalleled processing power of GPUs
@@ -86,22 +86,21 @@ const Hero = () => {
         </div>
 
         <motion.div
-          className="w-[100%] h-full xl:mt-10 mt-32 sm:mt-28 flex gap-1 lg:px-10 overflow-hidden "
+          className="w-[100%] h-full  flex gap-[2px] lg:gap-1 lg:px-10 overflow-hidden "
           style={{
-            translateY: t,
-            translateX: c,
-            rotateX: r,
+            translateX: TranslateX,
+            rotateX: RotateX,
             position: "relative",
             transformPerspective: 819,
-            rotateZ: rz,
-            rotateY: ry,
+            rotateZ: RotateZ,
+            rotateY: RotateY,
           }}
         >
           {HeroImage.map((item, index) => (
             <ComponentTransition
               delay={index * 0.1}
               key={index}
-              className=" overflow-hidden rounded-xl w-full"
+              className=" overflow-hidden rounded-md lg:rounded-xl w-full"
             >
               <Image
                 alt="Hero"
