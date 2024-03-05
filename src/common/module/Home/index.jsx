@@ -1,12 +1,9 @@
 import React from 'react'
 import Hero from '../Hero'
 import Service from '../Service'
-import Solution from '../Solution'
-import Blog from '../Blog'
-import Feedback from '../Feedback'
 import Feature from '../Feature/Feature'
-import Pricing from '../Pricing/Pricing'
 import Banner from '../Banner/Banner'
+import About from '../About'
 
 const Homepage = () => {
   return (
@@ -14,10 +11,7 @@ const Homepage = () => {
       <Hero />
       <Feature />
       <Service />
-      {/* <Solution /> */}
-      {/* <Pricing/> */}
-      {/* <Blog/> */}
-      {/* <Feedback/> */}
+      <About />
       <Banner />
     </div>
   )

@@ -54,7 +54,7 @@ const Hero = () => {
 
   return (
     <div className="h-auto md:mb-20 max-w-[1500px] px-5 lg:px-10  relative ">
-      <div className="flex flex-col justify-center md:top-0 mt-28 lg:mt-52  items-center">
+      <div className="flex flex-col justify-center md:top-0 mt-36 lg:mt-52  items-center">
         <div className="flex flex-col items-center justify-center">
           <div className="border-[1px] rounded-full border-[#5515df] py-2 px-5 mb-2">
             <h1>New Era in GPU-centric computing</h1>

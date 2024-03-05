@@ -1,37 +1,47 @@
-import Rails from "@/common/component/element/Rails";
 import React from "react";
-import CardAbout from "./component/CardAbout";
 import ComponentTransition from "@/common/component/element/ComponentTransition";
-import Feedback from "../Feedback";
-import CardOffer from "@/common/component/element/CardBanner";
+import SectionHeading from "@/common/component/element/SectionHeading";
+import { IoIosPeople } from "react-icons/io";
+import H1 from "@/common/component/element/H1";
 
 const About = () => {
   return (
-    <ComponentTransition className="h-auto max-w-[1500px] px-10 xl:px-20 pb-20">
-      <div className="flex justify-center py-5 ">
-        <div className="flex justify-center mt-20 relative ">
-          <h1 className="text-4xl md:text-7xl py-5 px-10 text-center dark:bg-gradient-to-r from-white from-50% to-black bg-text bg-clip-text  text-transparent font-bold">
-            About Us
-          </h1>
-          <div className=" absolute w-[150%] md:w-[210%]  h-[250px] z-[-99] top-[-70px]">
-            <Rails />
-            <div className="bg-gradient-to-b from-white dark:from-black from-20% to-transparent absolute inset-0 "></div>
-            <div className="bg-gradient-to-l from-white dark:from-black from-1% to-transparent to-30% absolute inset-0"></div>
-            <div className="bg-gradient-to-r from-white dark:from-black from-1% to-transparent to-30% absolute inset-0"></div>
-            <div className="bg-gradient-to-t from-white dark:from-black from-1% to-transparent to-30% absolute inset-0"></div>
-          </div>
-        </div>
-      </div>
-      <div className="flex justify-center items-center flex-col">
-        <p className="text-base md:text-2xl text-neutral-500 md:w-[70%] text-center">
-          Watch your operations optimize as our apps streamline workflows and
-          drives efficiency for your success.
-        </p>
-      </div>
-      <CardAbout />
-      <Feedback className='!px-0' />
-      <CardOffer title='Let&rsquo;s Get Started With Us' className="!px-0" />
-    </ComponentTransition>
+    <div className="h-auto max-w-[1500px] relative px-5 lg:px-10 xl:px-20 pb-20 flex justify-start w-full flex-col">
+      <ComponentTransition className="flex justify-center py-5">
+        <SectionHeading
+          title="About Us"
+          icon={<IoIosPeople size={30} />}
+        />
+      </ComponentTransition>
+      <ComponentTransition
+        delay={0.1}
+        className="flex w-full justify-center items-center flex-col"
+      >
+        <h1 className="text-3xl md:text-5xl py-5 text-center bg-clip-text dark:bg-gradient-to-r from-white from-50% to-[#8f8f8f]  bg-text md:w-[50%] text-transparent font-bold">
+        Discover About Us
+        </h1>
+
+      </ComponentTransition>
+      <div className='w-full py-10'>
+        <ComponentTransition  className="w-full h-auto lg:h-[500px] overflow-hidden flex flex-col justify-start items-center px-5 lg:px-10   py-10 lg:py-20 bg-gradient-to-b from-[#dbdbdb7a] dark:from-[#1414147a] dark:to-[#141414] rounded-3xl">
+
+          <H1
+            className="md:mt-5 mt-10  !font-semibold !justify-start !text-4xl text-start "
+            title='Vision'
+            textColor="white"
+          />
+          <H1
+            className="md:mt-5 mt-10  !justify-center !text-base lg:!text-xl font-medium text-center "
+            title='In the fast-evolving landscape of technology, where innovation propels us toward uncharted territories, FlexGPU stands at the forefront as a visionary force, heralding a new era in GPU-centric computing. The vision for FlexGPU is a testament to a future where the immense power of Graphics Processing Units (GPUs) converges with a purpose: to redefine hosting, artificial intelligence, and high-performance computing services.'
+            textColor="normal"
+          />
+
+        </ComponentTransition>
+
+    </div>
+      <div className="absolute top-[130px] z-[-9] glowbg w-[100px] md:w-[300px] h-[200px]  left-0 "></div>
+
+    </div>
   );
 };
 
