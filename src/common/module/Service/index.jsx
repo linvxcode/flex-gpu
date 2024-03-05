@@ -24,7 +24,6 @@ const Service = () => {
         </h1>
 
       </ComponentTransition>
-      {/* <Card Content={ServiceItem} /> */}
       <ServiceCard />
       <div className="absolute top-[130px] z-[-9] glowbg w-[100px] md:w-[300px] h-[200px]  left-0 "></div>
       <div className="absolute top-[730px] z-[-9] glowbg w-[100px] md:w-[300px] h-[200px]  left-[90%] "></div>

@@ -9,9 +9,9 @@ const Homepage = () => {
   return (
     <div className='w-full overflow-hidden flex justify-center flex-col items-center'>
       <Hero />
+      <About />
       <Feature />
       <Service />
-      <About />
       <Banner />
     </div>
   )
