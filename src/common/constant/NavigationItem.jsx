@@ -5,24 +5,20 @@ export const NavigationItem = [
         src: '/',
         title: 'Home'
     },
-    // {
-    //     src: '/services',
-    //     title: 'Services'
-    // },
-    // {
-    //     src: '/solution',
-    //     title: 'Solution'
-    // },
-    // {
-    //     src: '/faq',
-    //     title: 'FAQ'
-    // },
-    // {
-    //     src: '/about',
-    //     title: 'About'
-    // },
-    // {
-    //     src: '/blog',
-    //     title: 'Blog'
-    // },
+    {
+        src: 'https://docs.flexgpu.app/',
+        title: 'Documentation'
+    },
+    {
+        src: 'https://docs.flexgpu.app/welcome-to-flexgpu/amazing-features',
+        title: 'Features'
+    },
+    {
+        src: 'https://docs.flexgpu.app/welcome-to-flexgpu/roadmap',
+        title: 'Roadmap'
+    },
+    {
+        src: 'https://docs.flexgpu.app/welcome-to-flexgpu/vision',
+        title: 'About'
+    },
 ]
