@@ -32,11 +32,11 @@ export default function ServiceCard() {
                     index === indexItem
                       ? " dark:text-black text-white border-[#5515df]"
                       : "dark:text-black text-white dark:border-white border-[#0F0E0E]",
-                    "w-auto  flex flex-row flex-wrap justify-center items-center gap-2 border-2 rounded-full px-5 py-4 relative overflow-hidden "
+                    "w-auto  flex flex-row flex-wrap justify-center items-center gap-2 border-2 rounded-full px-3 lg:px-5 py-2 lg:py-1 relative overflow-hidden "
                   )}
                   onClick={() => handleChange(index)}
                 >
-                  <div className="w-auto rounded-full p-2 ">{item.icon}</div>
+                  <div className="w-auto rounded-full lg:p-2 ">{item.icon}</div>
                   <h1 className="relative flex-nowrap max-lg:hidden">
                     {item.title}
                   </h1>{" "}
