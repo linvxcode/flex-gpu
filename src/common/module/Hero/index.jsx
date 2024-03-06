@@ -70,9 +70,14 @@ const Hero = () => {
             unparalleled processing power of GPUs
           </p>
 
-          <motion.div className="flex max-md:flex-col w-full items-center justify-center gap-5 py-5">
+          <motion.div className="flex flex-col w-full items-center justify-center gap-5 py-5">
             <Link href='https://docs.flexgpu.app/welcome-to-flexgpu/introducing' target="__blank">
             <ButtonWarp label='Get Started'  />
+            </Link>
+            <Link href='https://etherscan.io/token/0xc0b6addde76be6a09231edc12a5e3794c11f594f' className="w-auto flex justify-center items-center px-5">
+            <h1 className="text-center text-sm lg:text-base text-black/60 hover:text-black/80 dark:hover:text-[#e6e6e6c0] dark:text-white/60 font-medium">
+            Contract Address : 0xC0b6aDDDE76BE6a09231edc12A5E3794C11f594F
+            </h1>
             </Link>
           </motion.div>
         </div>
