@@ -17,7 +17,7 @@ export default function ServiceCard() {
     <div className="w-full ">
       <div className="w-full flex flex-col max-lg:gap-10 justify-center items-center">
         <div className="w-full flex  justify-center items-start">
-          <div className="flex flex-row flex-wrap gap-5 w-auto py-5 lg:py-10">
+          <div className="flex flex-row flex-wrap gap-2 lg:gap-5 w-auto py-5 lg:py-10">
             {ServiceItem.map((item, index) => (
               <ComponentTransition
                 delay={index * 0.1}
@@ -30,20 +30,30 @@ export default function ServiceCard() {
                   }}
                   className={clsx(
                     index === indexItem
-                      ? " dark:text-black text-white border-[#5515df]"
-                      : "dark:text-black text-white dark:border-white border-[#0F0E0E]",
-                    "w-auto  flex flex-row flex-wrap justify-center items-center gap-2 border-2 rounded-full px-3 lg:px-5 py-2 lg:py-1 relative overflow-hidden "
+                      ? " dark:text-black text-white"
+                      : "dark:text-black text-white",
+                    "w-auto lg:px-5 flex  justify-center items-center  rounded-full relative overflow-hidden "
                   )}
                   onClick={() => handleChange(index)}
                 >
-                  <div className="w-auto rounded-full lg:p-2 ">{item.icon}</div>
+                  <div
+                    className={clsx(
+                      index === indexItem
+                        ? "bg-[#5515df]  "
+                        : "bg-[#0F0E0E] dark:bg-[#FFFFF7]",
+                      `w-auto rounded-full p-2   flex justify-center items-center`
+                    )}
+                  >
+                    {item.icon}
+                  </div>
+
                   <h1 className="relative flex-nowrap max-lg:hidden">
                     {item.title}
                   </h1>{" "}
                   <div
                     className={clsx(
                       index === indexItem
-                        ? "translate-y-[0%] bg-[#5515df]"
+                        ? "bg-[#5515df]"
                         : " dark:bg-white bg-[#0F0E0E]",
                       "absolute  transition-all duration-300 inset-0 z-[-5]"
                     )}
