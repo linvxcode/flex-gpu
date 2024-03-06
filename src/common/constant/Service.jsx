@@ -26,8 +26,8 @@ export const ServiceItem = [
     icon : <AiOutlineCloudServer className="h-10 w-10  dark:text-black text-white group-hover:text-white " />
   },
   {
-    title: 'Cloud Desktop',
-    desc: "A Cloud Desktop service, in a broader sense, refers to a virtual desktop infrastructure (VDI) that is hosted and operated in the cloud. Instead of relying on a physical computer or a traditional desktop environment, users access their desktop environment remotely through a web browser or a dedicated application.",
+    title: 'Cloud Dekstop',
+    desc: "A Cloud Dekstop service, in a broader sense, refers to a virtual dekstop infrastructure (VDI) that is hosted and operated in the cloud. Instead of relying on a physical computer or a traditional dekstop environment, users access their dekstop environment remotely through a web browser or a dedicated application.",
     link: 'https://docs.flexgpu.app/product/cloud-dekstop',
     icon : <TbCloudComputing className="h-10 w-10  dark:text-black text-white group-hover:text-white " />
   },
