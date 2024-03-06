@@ -31,7 +31,7 @@ export default function ButtonWarp({label, className}) {
         />
         <GoArrowUpRight
           size={22}
-          className={`text-[#F2F2F2] left-[80%] mt-1 ${
+          className={`text-[#F2F2F2] left-[75%] mt-1 ${
             !isHover
               ? "-translate-x-10 translate-y-10"
               : "translate-x-0 translate-y-0"
@@ -49,7 +49,7 @@ export default function ButtonWarp({label, className}) {
             ease: [0.6, 0.2, 0, 1],
             duration: 1.2,
           }}
-          className={`${className} absolute left-[76%] bg-[#5515df] z-[-9]`}
+          className={`${className} absolute left-[69%] bg-[#5515df] z-[-9]`}
         ></motion.div>
       </motion.button>
     </div>

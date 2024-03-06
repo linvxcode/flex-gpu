@@ -22,13 +22,13 @@ export default function CardBanner({title, className = ''}) {
         <h1 className="text-4xl md:text-7xl py-5 text-start bg-clip-text bg-gradient-to-r dark:from-white from-black from-50% dark:to-[#b1b1b1] to-[#292929]   md:w-[80%] text-transparent font-bold">
           {title}
         </h1>
-        <Link href='https://docs.flexgpu.app/welcome-to-flexgpu/introducing' target="__blank" className="w-auto">
-        <ButtonWarp label='Get Started'  />
+        <Link href='https://dapps.flexgpu.app' target="__blank" className="w-auto">
+        <ButtonWarp label='Dapps'  />
         </Link>
         </div>
         <div className="w-full">
         <Image
-          src="/Aset/Macbook.png"
+          src="/Aset/Dapps.png"
           alt="image"
           width={400}
           height={400}
